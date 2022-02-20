@@ -1,0 +1,1212 @@
+fileFormatVersion: 2
+guid: 666c08a1d2b48624ab1c64251cad3d21
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3317260617168370717
+    second: LowerPlants3_0
+  - first:
+      213: 2767563626033688032
+    second: LowerPlants3_1
+  - first:
+      213: -6233887647956442340
+    second: LowerPlants3_2
+  - first:
+      213: -9132304251360511046
+    second: LowerPlants3_3
+  - first:
+      213: -5492742676343562990
+    second: LowerPlants3_4
+  - first:
+      213: 5049194305661944516
+    second: LowerPlants3_5
+  - first:
+      213: 6450742444946396162
+    second: LowerPlants3_6
+  - first:
+      213: -3681452128892813269
+    second: LowerPlants3_7
+  - first:
+      213: 1566827995960907809
+    second: LowerPlants3_8
+  - first:
+      213: -7861791586857365853
+    second: LowerPlants3_9
+  - first:
+      213: -6187771301459272822
+    second: LowerPlants3_10
+  - first:
+      213: -1371597952758053944
+    second: LowerPlants3_11
+  - first:
+      213: -6391478321270771902
+    second: LowerPlants3_12
+  - first:
+      213: 3350872619817852024
+    second: LowerPlants3_13
+  - first:
+      213: -4623398848961146672
+    second: LowerPlants3_14
+  - first:
+      213: -7574659172023840993
+    second: LowerPlants3_15
+  - first:
+      213: 5939034665363175827
+    second: LowerPlants3_16
+  - first:
+      213: 497978420285957211
+    second: LowerPlants3_17
+  - first:
+      213: 3581903517999171537
+    second: LowerPlants3_18
+  - first:
+      213: -3340922859243924368
+    second: LowerPlants3_19
+  - first:
+      213: -1112659398516783914
+    second: LowerPlants3_20
+  - first:
+      213: -8682866607421278625
+    second: LowerPlants3_21
+  - first:
+      213: -1386903519601917883
+    second: LowerPlants3_22
+  - first:
+      213: -6192873667618414342
+    second: LowerPlants3_23
+  - first:
+      213: 6564761115098602086
+    second: LowerPlants3_24
+  - first:
+      213: 3465941782189167912
+    second: LowerPlants3_25
+  - first:
+      213: -2690379417844727186
+    second: LowerPlants3_26
+  - first:
+      213: -7790171840805306208
+    second: LowerPlants3_27
+  - first:
+      213: -340380068703991549
+    second: LowerPlants3_28
+  - first:
+      213: -353212691180276751
+    second: LowerPlants3_29
+  - first:
+      213: -4620100267844055668
+    second: LowerPlants3_30
+  - first:
+      213: -4814430992287422172
+    second: LowerPlants3_31
+  - first:
+      213: 6960887190032678252
+    second: LowerPlants3_32
+  - first:
+      213: -8183282549583452905
+    second: LowerPlants3_33
+  - first:
+      213: 7112900237965556651
+    second: LowerPlants3_34
+  - first:
+      213: 7907364590777073111
+    second: LowerPlants3_35
+  - first:
+      213: 7972074865945298830
+    second: LowerPlants3_36
+  - first:
+      213: -7443359980657029881
+    second: LowerPlants3_37
+  - first:
+      213: -7069851608011124038
+    second: LowerPlants3_38
+  - first:
+      213: 4587060073737816485
+    second: LowerPlants3_39
+  - first:
+      213: 6137589577301342193
+    second: LowerPlants3_40
+  - first:
+      213: -8647174720441819491
+    second: LowerPlants3_41
+  - first:
+      213: -1801996900639664265
+    second: LowerPlants3_42
+  - first:
+      213: -813900540714962845
+    second: LowerPlants3_43
+  - first:
+      213: -1140048441747532132
+    second: LowerPlants3_44
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LowerPlants3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1752
+        width: 1486
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e349465b09b6f1d0800000000000000
+      internalID: -3317260617168370717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_1
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1996
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eda707647c586620800000000000000
+      internalID: 2767563626033688032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_2
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 1956
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c136cd57638cc79a0800000000000000
+      internalID: -6233887647956442340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1747
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbfddc1ba9834180800000000000000
+      internalID: -9132304251360511046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_4
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1746
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21dd9ed33abd5c3b0800000000000000
+      internalID: -5492742676343562990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_5
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1749
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2c7ee1877521640800000000000000
+      internalID: 5049194305661944516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_6
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1748
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20490908314a58950800000000000000
+      internalID: 6450742444946396162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_7
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 1593
+        width: 430
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b200dbf3bcad8ecc0800000000000000
+      internalID: -3681452128892813269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_8
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1648
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128136bc2cd7eb510800000000000000
+      internalID: 1566827995960907809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_9
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 1597
+        width: 161
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae463f843e45e290800000000000000
+      internalID: -7861791586857365853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_10
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1613
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8bd92919ce902aa0800000000000000
+      internalID: -6187771301459272822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_11
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1601
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c30433ddea17fce0800000000000000
+      internalID: -1371597952758053944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_12
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1593
+        width: 24
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fab0f8458ec47a0800000000000000
+      internalID: -6391478321270771902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_13
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1588
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c53dfd4e0b08e20800000000000000
+      internalID: 3350872619817852024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1412
+        width: 1281
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d098b02e3366dfb0800000000000000
+      internalID: -4623398848961146672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_15
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 1296
+        width: 965
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f4dd48d9761e690800000000000000
+      internalID: -7574659172023840993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_16
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1324
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399f3b1df80bb6250800000000000000
+      internalID: 5939034665363175827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_17
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 1330
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5464fe1cbc29e600800000000000000
+      internalID: 497978420285957211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_18
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1115
+        width: 320
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7001a954a75b130800000000000000
+      internalID: 3581903517999171537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_19
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 982
+        width: 650
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07498c84c58a2a1d0800000000000000
+      internalID: -3340922859243924368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_20
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 1290
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d448631c2a0f80f0800000000000000
+      internalID: -1112659398516783914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_21
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 847
+        width: 902
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56bd8803d2408780800000000000000
+      internalID: -8682866607421278625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_22
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 1017
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5408368d89ab0cce0800000000000000
+      internalID: -1386903519601917883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_23
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 449
+        width: 631
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0ebb6e53e7e0aa0800000000000000
+      internalID: -6192873667618414342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_24
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 710
+        width: 487
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66adfbcd377ba1b50800000000000000
+      internalID: 6564761115098602086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_25
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 805
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825d19300bf791030800000000000000
+      internalID: 3465941782189167912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_26
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 692
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62c7587c2ad9aad0800000000000000
+      internalID: -2690379417844727186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_27
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 371
+        width: 1393
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a08c812cffb3e390800000000000000
+      internalID: -7790171840805306208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_28
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 370
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3098644812ab64bf0800000000000000
+      internalID: -340380068703991549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_29
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 300
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f33a04cde2291bf0800000000000000
+      internalID: -353212691180276751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 244
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8dc774e84b12efb0800000000000000
+      internalID: -4620100267844055668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_31
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 184
+        width: 718
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429a31d3584bf2db0800000000000000
+      internalID: -4814430992287422172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_32
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 8
+        width: 1276
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6df67bd40a0a9060800000000000000
+      internalID: 6960887190032678252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_33
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 225
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715ec67c0e32f6e80800000000000000
+      internalID: -8183282549583452905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_34
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 225
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab7ab6a41916b260800000000000000
+      internalID: 7112900237965556651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_35
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 181
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ddf4c6433a9cbd60800000000000000
+      internalID: 7907364590777073111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_36
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 164
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e874d7b4adf72ae60800000000000000
+      internalID: 7972074865945298830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_37
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 136
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d4491c88fd3b890800000000000000
+      internalID: -7443359980657029881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_38
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2d5c19b67d2ed90800000000000000
+      internalID: -7069851608011124038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_39
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 0
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9058275d288af30800000000000000
+      internalID: 4587060073737816485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_40
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 6
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7bf24c3391d2550800000000000000
+      internalID: 6137589577301342193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_41
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 0
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ed35d08601ff780800000000000000
+      internalID: -8647174720441819491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_42
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 4
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7779403cd550ef6e0800000000000000
+      internalID: -1801996900639664265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_43
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 4
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360bf2c35c174b4f0800000000000000
+      internalID: -813900540714962845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowerPlants3_44
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 0
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9696e28bfbbd20f0800000000000000
+      internalID: -1140048441747532132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

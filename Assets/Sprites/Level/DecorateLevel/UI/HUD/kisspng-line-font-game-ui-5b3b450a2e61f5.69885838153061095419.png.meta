@@ -1,0 +1,1116 @@
+fileFormatVersion: 2
+guid: 57c51b4caab0ee3479c09385493103fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 968218015277576538
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_0
+  - first:
+      213: -3903183086948069474
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_1
+  - first:
+      213: 6505021552468735469
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_2
+  - first:
+      213: 5770110877242008819
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_3
+  - first:
+      213: 4873715071506709253
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_4
+  - first:
+      213: -8039982147060881248
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_5
+  - first:
+      213: -3931099028570841295
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_6
+  - first:
+      213: -8861565677931060932
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_7
+  - first:
+      213: -478553889454585537
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_8
+  - first:
+      213: 8862648491582562354
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_9
+  - first:
+      213: -6245083446276949292
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_10
+  - first:
+      213: -323399977356075141
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_11
+  - first:
+      213: -5688258252423728360
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_12
+  - first:
+      213: -5702095100393979763
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_13
+  - first:
+      213: -3994075072213269732
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_14
+  - first:
+      213: -7473075604018588832
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_15
+  - first:
+      213: 4538031337486041732
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_16
+  - first:
+      213: -2918030393964146063
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_17
+  - first:
+      213: -6811173488176804993
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_18
+  - first:
+      213: -7891102689103080194
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_19
+  - first:
+      213: -8105287389802259608
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_20
+  - first:
+      213: 1824007067519490537
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_21
+  - first:
+      213: 5611369966919701831
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_22
+  - first:
+      213: 8278795045759123452
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_23
+  - first:
+      213: 1792185927972242858
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_24
+  - first:
+      213: -8886519311014426220
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_25
+  - first:
+      213: 8591168933371264422
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_26
+  - first:
+      213: -2652849705974129383
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_27
+  - first:
+      213: -3581090047634389447
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_28
+  - first:
+      213: 5843626627577438574
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_29
+  - first:
+      213: -9072703957187916434
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_30
+  - first:
+      213: 8503921760499247788
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_31
+  - first:
+      213: -3242746348698173405
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_32
+  - first:
+      213: -8713083630789052162
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_33
+  - first:
+      213: 6851297697619424064
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_34
+  - first:
+      213: -14130028853580396
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_35
+  - first:
+      213: -1386852283060720057
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_36
+  - first:
+      213: 4288896424519822691
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_37
+  - first:
+      213: -5014136989625099439
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_38
+  - first:
+      213: -588995649001563867
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_39
+  - first:
+      213: 7699320064631500428
+    second: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_40
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 936
+        width: 143
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51f0c1b72dcf6d00800000000000000
+      internalID: 968218015277576538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 943
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9fc52199ab15d9c0800000000000000
+      internalID: -3903183086948069474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_2
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 942
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5b82b03aa764a50800000000000000
+      internalID: 6505021552468735469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_3
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 912
+        width: 177
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4a0a0854d831050800000000000000
+      internalID: 5770110877242008819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 787
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50bff95190ae2a340800000000000000
+      internalID: 4873715071506709253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_5
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 787
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a824fbb5de3c6090800000000000000
+      internalID: -8039982147060881248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_6
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 787
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13fd629e24ee179c0800000000000000
+      internalID: -3931099028570841295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_7
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 778
+        width: 131
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31202d67f4650580800000000000000
+      internalID: -8861565677931060932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_8
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 663
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f398d25e5c5db59f0800000000000000
+      internalID: -478553889454585537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_9
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 642
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2302ee5c8d37efa70800000000000000
+      internalID: 8862648491582562354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_10
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 642
+        width: 110
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da7df781b10559a0800000000000000
+      internalID: -6245083446276949292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_11
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 642
+        width: 111
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f525d1f6d038bf0800000000000000
+      internalID: -323399977356075141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_12
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 652
+        width: 86
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8137991d14f3f01b0800000000000000
+      internalID: -5688258252423728360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_13
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 538
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80858997b61ed0b0800000000000000
+      internalID: -5702095100393979763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_14
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 520
+        width: 111
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c134c7222e13298c0800000000000000
+      internalID: -3994075072213269732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_15
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 517
+        width: 110
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06395da055d4a4890800000000000000
+      internalID: -7473075604018588832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_16
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 517
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482427a35735afe30800000000000000
+      internalID: 4538031337486041732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_17
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 559
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17259fb21d21187d0800000000000000
+      internalID: -2918030393964146063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_18
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 418
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7bc9a5bcc9d971a0800000000000000
+      internalID: -6811173488176804993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_19
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 397
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef491e1c9eb2d7290800000000000000
+      internalID: -7891102689103080194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_20
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 392
+        width: 110
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b1268001c348f80800000000000000
+      internalID: -8105287389802259608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_21
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 395
+        width: 111
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e91d4f83cc205910800000000000000
+      internalID: 1824007067519490537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_22
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 465
+        width: 88
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7455b8d21479fdd40800000000000000
+      internalID: 5611369966919701831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_23
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 299
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff7cbe2b3034e270800000000000000
+      internalID: 8278795045759123452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_24
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 275
+        width: 111
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa54d382b9f1fd810800000000000000
+      internalID: 1792185927972242858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_25
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 272
+        width: 110
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4990659f4cdbca480800000000000000
+      internalID: -8886519311014426220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_26
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 274
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad37fe70a6f93770800000000000000
+      internalID: 8591168933371264422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_27
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 369
+        width: 88
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d99e07f3f2f2bd0800000000000000
+      internalID: -2652849705974129383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_28
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 273
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936c01a33996d4ec0800000000000000
+      internalID: -3581090047634389447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_29
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 170
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6164c8f47bb81150800000000000000
+      internalID: 5843626627577438574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_30
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 151
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d8887f1d7471280800000000000000
+      internalID: -9072703957187916434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_31
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 148
+        width: 110
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caaa54419cff30670800000000000000
+      internalID: 8503921760499247788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_32
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 150
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320862d60637ff2d0800000000000000
+      internalID: -3242746348698173405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_33
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 177
+        width: 86
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef83c880a98e41780800000000000000
+      internalID: -8713083630789052162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_34
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 43
+        width: 82
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043be0dc4f2b41f50800000000000000
+      internalID: 6851297697619424064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_35
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 28
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d248940dccdcff0800000000000000
+      internalID: -14130028853580396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_36
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 27
+        width: 110
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ee9384239e0cce0800000000000000
+      internalID: -1386852283060720057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_37
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 31
+        width: 64
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d62f51398358b30800000000000000
+      internalID: 4288896424519822691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_38
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 31
+        width: 64
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15bdf3659f43a6ab0800000000000000
+      internalID: -5014136989625099439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_39
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 31
+        width: 64
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529d20fe39773d7f0800000000000000
+      internalID: -588995649001563867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-font-game-ui-5b3b450a2e61f5.69885838153061095419_40
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 31
+        width: 64
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ee5685eca79da60800000000000000
+      internalID: 7699320064631500428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
