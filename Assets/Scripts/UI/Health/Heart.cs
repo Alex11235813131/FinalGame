@@ -6,7 +6,7 @@ public class Heart : MonoBehaviour
     [SerializeField] private float _delay;
 
     private Animator _animaor;
-    private const string _destroy = "Destroy";
+    private const string Delete = "Destroy";
 
     private void Start()
     {
@@ -20,7 +20,7 @@ public class Heart : MonoBehaviour
 
     private IEnumerator Removing()
     {
-        _animaor.SetTrigger(_destroy);
+        _animaor.SetTrigger(Delete);
         yield return new WaitForSeconds(_delay);
         gameObject.SetActive(false);
     }

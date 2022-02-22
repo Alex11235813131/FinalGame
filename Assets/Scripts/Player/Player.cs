@@ -18,22 +18,23 @@ public class Player : MonoBehaviour
     public PlayerMover Mover => _playerMover;
     public Weapon CurrentWeapon => _currentWeapon;
 
-    public event UnityAction TakeDamage, Dying;
+    public event UnityAction TakedDamage, Dying;
     public event UnityAction<int> HealthChanged;
-    public event UnityAction<Weapon> Attack, ChangeWeapon;
+    public event UnityAction<Weapon> AppliedDamage, ChangedWeapon;
+
 
     private void OnEnable()
     {
         _weaponPickUpPoint.ActivatedWeapon += OnWeaponPickUp;
-        _controllerScreen.AttackClick += OnTryAttack;
-        _controllerScreen.SwapWeaponClick += OnSwapWeapon;
+        _controllerScreen.AttackClicked += OnTryAttack;
+        _controllerScreen.SwapWeaponClicked += OnSwapWeapon;
     }
 
     private void OnDisable()
     {
         _weaponPickUpPoint.ActivatedWeapon -= OnWeaponPickUp;
-        _controllerScreen.AttackClick -= OnTryAttack;
-        _controllerScreen.SwapWeaponClick -= OnSwapWeapon;
+        _controllerScreen.AttackClicked -= OnTryAttack;
+        _controllerScreen.SwapWeaponClicked -= OnSwapWeapon;
     }
 
     private void Start()
@@ -47,28 +48,26 @@ public class Player : MonoBehaviour
             _weapons[i] = result;
         }
 
-        ChangeWeapon?.Invoke(_currentWeapon);
+        ChangedWeapon?.Invoke(_currentWeapon);
     }
 
-    public void ApplyDamage(int damage)
+    public void TakeDamage(int damage)
     {
         _currentHealth -= damage;
 
-        if (_currentHealth < 0)
-            _currentHealth = 0;
+        if(_currentHealth <= 0)
+        {
+            Die();
+        }
 
-        DyingChecker();
         HealthChanged?.Invoke(_currentHealth);
-        TakeDamage?.Invoke();
+        TakedDamage?.Invoke();
     }
 
-    private void DyingChecker()
+    private void Die()
     {
-        if (_currentHealth <= 0)
-        {
-            Dying?.Invoke();
-            gameObject.SetActive(false);
-        }
+        Dying?.Invoke();
+        gameObject.SetActive(false);
     }
 
     private void OnTryAttack()
@@ -77,7 +76,7 @@ public class Player : MonoBehaviour
             return;
 
         _currentWeapon.Shoot(_shootPoint, transform.localScale.x);
-        Attack?.Invoke(_currentWeapon);
+        AppliedDamage?.Invoke(_currentWeapon);
     }
 
     private void OnWeaponPickUp()
@@ -101,6 +100,6 @@ public class Player : MonoBehaviour
             _currentWeapon = _weapons[--_weaponIndex];
         }
 
-        ChangeWeapon?.Invoke(_currentWeapon);
+        ChangedWeapon?.Invoke(_currentWeapon);
     }
 }

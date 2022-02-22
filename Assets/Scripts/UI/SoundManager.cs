@@ -26,43 +26,43 @@ public class SoundManager : MonoBehaviour
 
     private void OnEnable()
     {
-        _player.Dying += OnPlayerDying;
-        _golem.Dying += OnGolemDying;
-        _finishGamePoint.Reached += OnFinishGamePointReached;
-        _bossActivator.Reached += OnBossActivatorReached;
+        _player.Dying += OnDie;
+        _golem.Dying += OnDieGolem;
+        _finishGamePoint.Reached += OnReachedFinishPoint;
+        _bossActivator.Reached += OnReachedBossActivator;
 
-        _startScreen.PlayButtonClick += OnButtonDown;
-        _startScreen.SettingButtonClick += OnButtonDown;
-        _startScreen.ExitButtonClick += OnButtonDown;
+        _startScreen.PlayButtonClicked += OnClick;
+        _startScreen.SettingButtonClicked += OnClick;
+        _startScreen.ExitButtonClicked += OnClick;
 
-        _settingScreen.VolumeChanged += OnVolumeChanged;
-        _settingScreen.CloseScreenButtonDown += OnButtonDown;
-        _settingScreen.RestartButtonClick += OnButtonDown;
-        _settingScreen.ExitButtonClick += OnButtonDown;
+        _settingScreen.VolumeChanged += OnChangeVolume;
+        _settingScreen.CloseScreenButtonClicked += OnClick;
+        _settingScreen.RestartButtonClicked += OnClick;
+        _settingScreen.ExitButtonClicked += OnClick;
 
-        _gameOverScreen.RestartButtonClick += OnButtonDown;
-        _gameOverScreen.SettingButtonClick += OnButtonDown;
-        _gameOverScreen.ExitButtonClick += OnButtonDown;
+        _gameOverScreen.RestartButtonClicked += OnClick;
+        _gameOverScreen.SettingButtonClicked += OnClick;
+        _gameOverScreen.ExitButtonClicked += OnClick;
     }
 
     private void OnDisable()
     {
-        _player.Dying -= OnPlayerDying;
-        _finishGamePoint.Reached -= OnFinishGamePointReached;
-        _bossActivator.Reached -= OnBossActivatorReached;
+        _player.Dying -= OnDie;
+        _finishGamePoint.Reached -= OnReachedFinishPoint;
+        _bossActivator.Reached -= OnReachedBossActivator;
 
-        _startScreen.PlayButtonClick -= OnButtonDown;
-        _startScreen.SettingButtonClick -= OnButtonDown;
-        _startScreen.ExitButtonClick -= OnButtonDown;
+        _startScreen.PlayButtonClicked -= OnClick;
+        _startScreen.SettingButtonClicked -= OnClick;
+        _startScreen.ExitButtonClicked -= OnClick;
 
-        _settingScreen.VolumeChanged -= OnVolumeChanged;
-        _settingScreen.CloseScreenButtonDown -= OnButtonDown;
-        _settingScreen.RestartButtonClick -= OnButtonDown;
-        _settingScreen.ExitButtonClick -= OnButtonDown;
+        _settingScreen.VolumeChanged -= OnChangeVolume;
+        _settingScreen.CloseScreenButtonClicked -= OnClick;
+        _settingScreen.RestartButtonClicked -= OnClick;
+        _settingScreen.ExitButtonClicked -= OnClick;
 
-        _gameOverScreen.RestartButtonClick -= OnButtonDown;
-        _gameOverScreen.SettingButtonClick -= OnButtonDown;
-        _gameOverScreen.ExitButtonClick -= OnButtonDown;
+        _gameOverScreen.RestartButtonClicked -= OnClick;
+        _gameOverScreen.SettingButtonClicked -= OnClick;
+        _gameOverScreen.ExitButtonClicked -= OnClick;
     }
 
     private void Start()
@@ -73,45 +73,45 @@ public class SoundManager : MonoBehaviour
     {
         _audioSource.Stop();
         _audioSource.PlayOneShot(_ambiendSound);
-        OnVolumeChanged();
+        OnChangeVolume();
     }
 
-    private void OnPlayerDying()
+    private void OnDie()
     {
         _audioSource.Stop();
         _audioSource.PlayOneShot(_playerDefeted);
     }
 
-    public void OnVolumeChanged()
+    public void OnChangeVolume()
     {
         _audioSource.volume = _volumeSlider.value;
     }
 
-    private void OnButtonDown()
+    private void OnClick()
     {
         _audioSource.PlayOneShot(_clickButtonSound, _clickVolume);
     }
 
-    private void OnFinishGamePointReached()
+    private void OnReachedFinishPoint()
     {
         Reset();
     }
 
-    private void OnBossActivatorReached()
+    private void OnReachedBossActivator()
     {
         _audioSource.Stop();
-        StartCoroutine(SmoothlyVolumeUp(_bossFightVolume, _bossFigth));
+        StartCoroutine(ChangeVolumeSmoothly(_bossFightVolume, _bossFigth));
     }
 
-    private void OnGolemDying()
+    private void OnDieGolem()
     {
         _audioSource.Stop();
         _audioSource.PlayOneShot(_bossDefeated);
-        StartCoroutine(Delay(_ambiendDelay));
+        StartCoroutine(SetDelay(_ambiendDelay));
         _audioSource.PlayOneShot(_ambiendSound);
     }
 
-    private IEnumerator SmoothlyVolumeUp(float targetVolume, AudioClip audioClip)
+    private IEnumerator ChangeVolumeSmoothly(float targetVolume, AudioClip audioClip)
     {
         _audioSource.volume = 0;
         _audioSource.PlayOneShot(audioClip);
@@ -123,7 +123,7 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    private IEnumerator Delay(float delayCount)
+    private IEnumerator SetDelay(float delayCount)
     {
         yield return new WaitForSeconds(delayCount);
     }

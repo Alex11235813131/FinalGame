@@ -12,7 +12,7 @@ public class PushableBlock : MonoBehaviour
         if (_moveDirection == Vector2.zero)
             return;
 
-        DistancetoPlayerChecker();
+        CheckDistanceToPlayer();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -21,7 +21,7 @@ public class PushableBlock : MonoBehaviour
             _moveDirection = player.GetComponent<PlayerMover>().MoveDirection.normalized;
     }
 
-    private void DistancetoPlayerChecker()
+    private void CheckDistanceToPlayer()
     {
         Player player = null;
 
@@ -36,10 +36,10 @@ public class PushableBlock : MonoBehaviour
                 continue;
         }
 
-        SoundActivator(player);
+        PlaySoundInMove(player);
     }
 
-    private void SoundActivator(Player player)
+    private void PlaySoundInMove(Player player)
     {
         if (player == null)
         {

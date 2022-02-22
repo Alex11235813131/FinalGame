@@ -5,7 +5,7 @@ public class PatrolState : State
 {
     private int _speed = 2;
     private Vector2 _moveDirection = Vector2.left;
-    private const string _idle = "Idle";
+    private const string Idle = "Idle";
 
     private void FixedUpdate()
     {
@@ -22,14 +22,14 @@ public class PatrolState : State
     {
         var CurrentSpeed = _speed;
         _speed = 0;
-        _animator.Play(_idle);
+        _animator.Play(Idle);
         yield return new WaitForSeconds(1f);
         _moveDirection.x = -_moveDirection.x;
         _speed = CurrentSpeed;
-        SpriteDirectionSetter();
+        SetSpriteDirection();
     }
 
-    private void SpriteDirectionSetter()
+    private void SetSpriteDirection()
     {
         transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
     }

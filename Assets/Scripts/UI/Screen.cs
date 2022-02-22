@@ -12,21 +12,21 @@ public abstract class Screen : MonoBehaviour
 
     private void OnEnable()
     {
-        Play.onClick.AddListener(OnPlayButtonClick);
-        Setting.onClick.AddListener(OnSettingButtonClick);
-        Exit.onClick.AddListener(OnExitButtonClick);
+        Play.onClick.AddListener(OnClickPlayButton);
+        Setting.onClick.AddListener(OnClickSettingButton);
+        Exit.onClick.AddListener(OnClickExitButton);
     }
 
     private void OnDisable()
     {
-        Play.onClick.AddListener(OnPlayButtonClick);
-        Setting.onClick.AddListener(OnSettingButtonClick);
-        Exit.onClick.AddListener(OnExitButtonClick);
+        Play.onClick.AddListener(OnClickPlayButton);
+        Setting.onClick.AddListener(OnClickSettingButton);
+        Exit.onClick.AddListener(OnClickExitButton);
     }
 
-    protected abstract void OnPlayButtonClick();
-    protected abstract void OnSettingButtonClick();
-    protected abstract void OnExitButtonClick();
+    protected abstract void OnClickPlayButton();
+    protected abstract void OnClickSettingButton();
+    protected abstract void OnClickExitButton();
 
     public abstract void Open();
     public abstract void Close();

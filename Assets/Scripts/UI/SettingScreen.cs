@@ -7,18 +7,18 @@ public class SettingScreen : Screen
     [SerializeField] private Slider _slider;
     [SerializeField] private Button _closeScreenButton;
 
-    public event UnityAction VolumeChanged, CloseScreenButtonDown, RestartButtonClick, ExitButtonClick;
+    public event UnityAction VolumeChanged, CloseScreenButtonClicked, RestartButtonClicked, ExitButtonClicked;
 
     private void OnEnable()
     {
-        _closeScreenButton.onClick.AddListener(OnCloseScreenButtonDown);
-        _slider.onValueChanged.AddListener(delegate { OnValaueChange(); });
+        _closeScreenButton.onClick.AddListener(OnClickCloseScreenButton);
+        _slider.onValueChanged.AddListener(delegate { OnChangeVolume(); });
     }
 
     private void OnDisable()
     {
-        _closeScreenButton.onClick.RemoveListener(OnCloseScreenButtonDown);
-        _slider.onValueChanged.RemoveListener(delegate { OnValaueChange(); });
+        _closeScreenButton.onClick.RemoveListener(OnClickCloseScreenButton);
+        _slider.onValueChanged.RemoveListener(delegate { OnChangeVolume(); });
     }
 
     public override void Close()
@@ -39,26 +39,26 @@ public class SettingScreen : Screen
         _slider.interactable = true;
     }
 
-    private void OnCloseScreenButtonDown()
+    private void OnClickCloseScreenButton()
     {
-        CloseScreenButtonDown?.Invoke();
+        CloseScreenButtonClicked?.Invoke();
     }
 
-    private void OnValaueChange()
+    private void OnChangeVolume()
     {
         VolumeChanged?.Invoke();
     }
 
-    protected override void OnPlayButtonClick()
+    protected override void OnClickPlayButton()
     {
-        RestartButtonClick?.Invoke();
+        RestartButtonClicked?.Invoke();
     }
-    protected override void OnExitButtonClick()
+    protected override void OnClickExitButton()
     {
-        ExitButtonClick?.Invoke();
+        ExitButtonClicked?.Invoke();
     }
 
-    protected override void OnSettingButtonClick()
+    protected override void OnClickSettingButton()
     {
     }
 }

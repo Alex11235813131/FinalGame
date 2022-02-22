@@ -6,11 +6,11 @@ public class FightState : State
     [SerializeField] private float _delay;
 
     private float _lastAttackTime = 2;
-    private const string _activation = "Activation";
+    private const string Activation = "Activation";
 
     private void OnEnable()
     {
-        _animator.SetTrigger(_activation);
+        _animator.SetTrigger(Activation);
     }
 
     private void Update()

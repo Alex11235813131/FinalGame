@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class StartScreen : Screen
 {
-    public event UnityAction PlayButtonClick, SettingButtonClick, ExitButtonClick;
+    public event UnityAction PlayButtonClicked, SettingButtonClicked, ExitButtonClicked;
 
     public override void Close()
     {
@@ -21,18 +21,18 @@ public class StartScreen : Screen
         Exit.interactable = true;
     }
 
-    protected override void OnPlayButtonClick()
+    protected override void OnClickPlayButton()
     {
-        PlayButtonClick?.Invoke();
+        PlayButtonClicked?.Invoke();
     }
 
-    protected override void OnSettingButtonClick()
+    protected override void OnClickSettingButton()
     {
-        SettingButtonClick?.Invoke();
+        SettingButtonClicked?.Invoke();
     }
 
-    protected override void OnExitButtonClick()
+    protected override void OnClickExitButton()
     {
-        ExitButtonClick?.Invoke();
+        ExitButtonClicked?.Invoke();
     }    
 }

@@ -13,24 +13,24 @@ public class ControllerHud : MonoBehaviour
     [SerializeField] private Button _swapWeapon;
     [SerializeField] private Button _settings;
 
-    public event UnityAction UpArrowClick, DownArrowClick, AttackClick, SwapWeaponClick, SettingClick;
+    public event UnityAction UpArrowClicked, DownArrowClicked, AttackClicked, SwapWeaponClicked, SettingClicked;
 
     private void OnEnable()
     {
-        _upArrow.onClick.AddListener(OnUpArrowClick);
-        _downArrow.onClick.AddListener(OnDownArrowClick);
-        _attack.onClick.AddListener(OnAttackClick);
-        _swapWeapon.onClick.AddListener(OnSwapWeaponClick);
-        _settings.onClick.AddListener(OnSettingClick);
+        _upArrow.onClick.AddListener(OnClickUpArrow);
+        _downArrow.onClick.AddListener(OnClickDownArrow);
+        _attack.onClick.AddListener(OnClickAttackButton);
+        _swapWeapon.onClick.AddListener(OnClickSwapWeaponButton);
+        _settings.onClick.AddListener(OnClickSettingButton);
     }
 
     private void OnDisable()
     {
-        _upArrow.onClick.RemoveListener(OnUpArrowClick);
-        _downArrow.onClick.RemoveListener(OnDownArrowClick);
-        _attack.onClick.RemoveListener(OnAttackClick);
-        _swapWeapon.onClick.RemoveListener(OnSwapWeaponClick);
-        _settings.onClick.RemoveListener(OnSettingClick);
+        _upArrow.onClick.RemoveListener(OnClickUpArrow);
+        _downArrow.onClick.RemoveListener(OnClickDownArrow);
+        _attack.onClick.RemoveListener(OnClickAttackButton);
+        _swapWeapon.onClick.RemoveListener(OnClickSwapWeaponButton);
+        _settings.onClick.RemoveListener(OnClickSettingButton);
     }
 
     public void Close()
@@ -57,28 +57,28 @@ public class ControllerHud : MonoBehaviour
         _settings.interactable = true;
     }
 
-    private void OnUpArrowClick()
+    private void OnClickUpArrow()
     {
-        UpArrowClick?.Invoke();
+        UpArrowClicked?.Invoke();
     }
 
-    private void OnDownArrowClick()
+    private void OnClickDownArrow()
     {
-        DownArrowClick?.Invoke();
+        DownArrowClicked?.Invoke();
     }
 
-    private void OnAttackClick()
+    private void OnClickAttackButton()
     {
-        AttackClick?.Invoke();
+        AttackClicked?.Invoke();
     }
 
-    private void OnSwapWeaponClick()
+    private void OnClickSwapWeaponButton()
     {
-        SwapWeaponClick?.Invoke();
+        SwapWeaponClicked?.Invoke();
     }
 
-    private void OnSettingClick()
+    private void OnClickSettingButton()
     {
-        SettingClick?.Invoke();
+        SettingClicked?.Invoke();
     }
 }

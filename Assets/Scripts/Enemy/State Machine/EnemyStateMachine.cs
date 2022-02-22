@@ -18,7 +18,7 @@ public class EnemyStateMachine : MonoBehaviour
 
     private void Update()
     {
-        TransitConditionChecker();
+        CheckTransitCondition();
     }
 
     private void Reset(State startState)
@@ -29,7 +29,7 @@ public class EnemyStateMachine : MonoBehaviour
             _currentState.Enter(_target);
     }
 
-    private void TransitConditionChecker()
+    private void CheckTransitCondition()
     {
         if (_currentState == null)
             Reset(_firstState);

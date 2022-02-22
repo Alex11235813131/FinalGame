@@ -10,33 +10,33 @@ public class PlayerSoundManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        PlayerMoves();
+        Moving();
     }
 
     private void OnEnable()
     {
-        _player.Mover.PlayerJumped += OnPlayerJumped;
-        _player.TakeDamage += OnPlayerTakeDamage;
+        _player.Mover.Jumped += OnJump;
+        _player.TakedDamage += OnTakeDamage;
     }
 
     private void OnDisable()
     {
-        _player.Mover.PlayerJumped -= OnPlayerJumped;
-        _player.TakeDamage -= OnPlayerTakeDamage;
+        _player.Mover.Jumped -= OnJump;
+        _player.TakedDamage -= OnTakeDamage;
     }
 
-    private void OnPlayerJumped()
+    private void OnJump()
     {
         _audioSource.PlayOneShot(_jump);
     }
 
-    private void OnPlayerTakeDamage()
+    private void OnTakeDamage()
     {
         _audioSource.clip = _takeDamage[Random.Range(0, _takeDamage.Length - 1)];
         _audioSource.Play();
     }
 
-    private void PlayerMoves()
+    private void Moving()
     {
         if (_audioSource.isPlaying)
             return;

@@ -13,9 +13,9 @@ public class ProtectedShield : MonoBehaviour
 
     private Golem _enemyGolem;
     private float _deactivationDelay = 1;
-    private const string _deactivate = "Deactivate";
-    private const string _activate = "Activate";
-    private bool _isDeactivation;
+    private const string Deactivate = "Deactivate";
+    private const string Activate = "Activate";
+    private bool _isDeactivated;
 
     public Enemy EnemyGolem => _enemyGolem;
 
@@ -26,15 +26,15 @@ public class ProtectedShield : MonoBehaviour
 
     private void OnEnable()
     {
-        _isDeactivation = false;
-        _animator.SetTrigger(_activate);
+        _isDeactivated = false;
+        _animator.SetTrigger(Activate);
         _audioSource.PlayOneShot(_activation);
         _healEffect.Play();
     }
 
     private void FixedUpdate()
     {
-        if (_isDeactivation == true)
+        if (_isDeactivated == true)
             return;
 
         if(_audioSource.isPlaying == false)
@@ -45,19 +45,19 @@ public class ProtectedShield : MonoBehaviour
             _healEffect.Stop();
             _audioSource.Stop();
             _audioSource.PlayOneShot(_deactivation);
-            _animator.Play(_deactivate);
+            _animator.Play(Deactivate);
             StartCoroutine(Deactivation());
         }
     }
 
     private IEnumerator Deactivation()
     {
-        _isDeactivation = true;
+        _isDeactivated = true;
         yield return new WaitForSeconds(_deactivationDelay);
         gameObject.SetActive(false);
     }
 
-    public void ApplyDamage(int damage)
+    public void TakeDamage(int damage)
     {
         _health -= damage;
         _audioSource.PlayOneShot(_takeDamage);

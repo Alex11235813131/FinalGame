@@ -12,11 +12,11 @@ public class AcidSoundArea : MonoBehaviour
         if (collision.gameObject.TryGetComponent<Player>(out Player player))
         {
             _audioSource.Play();
-            StartCoroutine(VolumeChanger(_targetVolume));
+            StartCoroutine(ChangeVolume(_targetVolume));
         }
     }
 
-    private IEnumerator VolumeChanger(float target)
+    private IEnumerator ChangeVolume(float target)
     {
         while(_audioSource.volume != target)
         {

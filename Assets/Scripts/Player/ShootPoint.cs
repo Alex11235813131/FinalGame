@@ -10,14 +10,14 @@ public class ShootPoint : MonoBehaviour
     private void OnEnable()
     {
         _player = GetComponentInParent<Player>();
-        _player.Mover.PlayerCrouched += OnSetNewPosition;
-        _player.Mover.PlayerJumped += OnSetDefaultPosition;
+        _player.Mover.Crouched += OnSetNewPosition;
+        _player.Mover.Jumped += OnSetDefaultPosition;
     }
 
     private void OnDisable()
     {
-        _player.Mover.PlayerCrouched -= OnSetNewPosition;
-        _player.Mover.PlayerJumped -= OnSetDefaultPosition;
+        _player.Mover.Crouched -= OnSetNewPosition;
+        _player.Mover.Jumped -= OnSetDefaultPosition;
     }
 
     private void OnSetNewPosition()

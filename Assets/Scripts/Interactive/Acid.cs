@@ -10,7 +10,7 @@ public class Acid : MonoBehaviour
         if (collision.gameObject.TryGetComponent<Player>(out Player player))
         {
             _audioSource.Play();
-            player.ApplyDamage(_damage);
+            player.TakeDamage(_damage);
         }
     }
 }

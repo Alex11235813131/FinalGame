@@ -12,7 +12,7 @@ public class GolemBullet : MonoBehaviour
 
     private void OnEnable()
     {
-        _coroutine = StartCoroutine(DeactivatedDelay());
+        _coroutine = StartCoroutine(ActivateLifeTimer());
         _moveDirection = new Vector2(-transform.localScale.x, 0);
     }
     private void OnDisable()
@@ -27,14 +27,14 @@ public class GolemBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.TryGetComponent(out Player player))
+        if (collision.gameObject.TryGetComponent<Player>(out Player player))
         {
-            player.ApplyDamage(_damage);
+            player.TakeDamage(_damage);
             gameObject.SetActive(false);
         }
     }
 
-    private IEnumerator DeactivatedDelay()
+    private IEnumerator ActivateLifeTimer()
     {
         yield return new WaitForSeconds(_delay);
         gameObject.SetActive(false);

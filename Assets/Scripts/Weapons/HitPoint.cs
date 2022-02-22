@@ -14,7 +14,7 @@ public class HitPoint : MonoBehaviour
     }
     private void OnEnable()
     {
-        StartCoroutine(DelayBeforeDeactivation());
+        StartCoroutine(ActivateLifeTimer());
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -22,10 +22,10 @@ public class HitPoint : MonoBehaviour
         if(collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
             enemy.TakeDamage(_damage);           
         else if (collision.gameObject.TryGetComponent<ProtectedShield>(out ProtectedShield shield))
-            shield.ApplyDamage(_damage);
+            shield.TakeDamage(_damage);
     }
 
-    private IEnumerator DelayBeforeDeactivation()
+    private IEnumerator ActivateLifeTimer()
     {
         yield return new WaitForSeconds(_delay);
         gameObject.SetActive(false);

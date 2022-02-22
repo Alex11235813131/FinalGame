@@ -15,11 +15,11 @@ public class FinishGamePoint : MonoBehaviour
         if (collision.gameObject.TryGetComponent<Player>(out Player player))
         {
             _audioSource.Play();
-            StartCoroutine(ReachedSoundDelay());
+            StartCoroutine(ReachedPointDelay());
         }
     }
 
-    private IEnumerator ReachedSoundDelay()
+    private IEnumerator ReachedPointDelay()
     {
         yield return new WaitForSeconds(_delay);
         Reached?.Invoke();

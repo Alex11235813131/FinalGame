@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour
 
     private void OnEnable()
     {
-        _coroutine = StartCoroutine(DeactivationDelay());
+        _coroutine = StartCoroutine(ActivateLifeTimer());
         _moveDirection = new Vector2(transform.localScale.x, 0);
     }
 
@@ -34,7 +34,7 @@ public class Bullet : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    private IEnumerator DeactivationDelay()
+    private IEnumerator ActivateLifeTimer()
     {
         yield return new WaitForSeconds(_deacivationDelay);
         gameObject.SetActive(false);

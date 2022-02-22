@@ -54723,7 +54723,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1487917769}
           m_TargetAssemblyTypeName: PlayerMover, Assembly-CSharp
-          m_MethodName: MoveButtonDown
+          m_MethodName: DownMoveButton
           m_Mode: 4
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -54739,7 +54739,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1487917769}
           m_TargetAssemblyTypeName: PlayerMover, Assembly-CSharp
-          m_MethodName: MoveButtonDown
+          m_MethodName: DownMoveButton
           m_Mode: 4
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -67364,6 +67364,12 @@ Transform:
   m_Father: {fileID: 688497581}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1418396746 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5111407978765044921, guid: 3b71f5f8863a3084cbb303f32378bd43,
+    type: 3}
+  m_PrefabInstance: {fileID: 5111407979752165332}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1428451323
 GameObject:
   m_ObjectHideFlags: 0
@@ -79312,7 +79318,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1487917769}
           m_TargetAssemblyTypeName: PlayerMover, Assembly-CSharp
-          m_MethodName: MoveButtonDown
+          m_MethodName: DownMoveButton
           m_Mode: 4
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -79328,7 +79334,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1487917769}
           m_TargetAssemblyTypeName: PlayerMover, Assembly-CSharp
-          m_MethodName: MoveButtonDown
+          m_MethodName: DownMoveButton
           m_Mode: 4
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -82467,6 +82473,11 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 1063499759}
+    - target: {fileID: 5111407979362083798, guid: 3b71f5f8863a3084cbb303f32378bd43,
+        type: 3}
+      propertyPath: _protectiveShield
+      value: 
+      objectReference: {fileID: 1418396746}
     - target: {fileID: 5111407979482447676, guid: 3b71f5f8863a3084cbb303f32378bd43,
         type: 3}
       propertyPath: m_RootOrder

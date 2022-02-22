@@ -7,11 +7,11 @@ public class GrenadeAttack : Attack
     [SerializeField] private float _animationDelay;
     [SerializeField] private ObjectPool _grenadePool;
 
-    private const string _grenadeAttack = "GrenadeAttack";
+    private const string Attack = "GrenadeAttack";
 
     public override void Shoot()
     {
-        _animator.SetTrigger(_grenadeAttack);
+        _animator.SetTrigger(Attack);
 
         if (_grenadePool.TryGetObject(out GameObject grenade))
         {

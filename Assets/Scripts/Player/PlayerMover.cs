@@ -21,7 +21,7 @@ public class PlayerMover : MonoBehaviour
     public bool IsDirectionRigth => _isDirectionRigth;
     public bool IsPlayerCrouched => _isPlayerCrouched;
 
-    public event UnityAction PlayerJumped, PushingBlock, PlayerCrouched, PlayerStandUp;
+    public event UnityAction Jumped, BlockPushing, Crouched, GotUp;
 
     private void Start()
     {
@@ -30,24 +30,24 @@ public class PlayerMover : MonoBehaviour
 
     private void OnEnable()
     {
-        _controllerScreen.UpArrowClick += OnJump;
-        _controllerScreen.DownArrowClick += OnCrouch;
+        _controllerScreen.UpArrowClicked += OnJump;
+        _controllerScreen.DownArrowClicked += OnCrouch;
     }
 
     private void OnDisable()
     {
-        _controllerScreen.UpArrowClick -= OnJump;
-        _controllerScreen.DownArrowClick -= OnCrouch;
+        _controllerScreen.UpArrowClicked -= OnJump;
+        _controllerScreen.DownArrowClicked -= OnCrouch;
     }
 
     private void FixedUpdate()
     {
         Mover();
-        GroundPositionChecker();
-        PushableBlockDetector();
+        CheckOnGroundPosition();
+        DetectedPushableBlock();
     }
 
-    public void MoveButtonDown(float directionX)
+    public void DownMoveButton(float directionX)
     {
         _moveDirection = new Vector2(directionX, 0);
         _isPlayerCrouched = false;
@@ -67,7 +67,7 @@ public class PlayerMover : MonoBehaviour
     {
         if (IsOnGround == true)
         {
-            PlayerJumped?.Invoke();
+            Jumped?.Invoke();
             _rigidbody.AddForce(Vector2.up * _jumpForce);
         }
 
@@ -80,12 +80,12 @@ public class PlayerMover : MonoBehaviour
         {
             if(_isPlayerCrouched == true)
             {
-                PlayerStandUp?.Invoke();
+                GotUp?.Invoke();
                 _isPlayerCrouched = false;
             }
             else
             {
-                PlayerCrouched?.Invoke();
+                Crouched?.Invoke();
                 _isPlayerCrouched = true;
             }
         }
@@ -97,17 +97,17 @@ public class PlayerMover : MonoBehaviour
         transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
     }
 
-    private void GroundPositionChecker()
+    private void CheckOnGroundPosition()
     {
-        if (PlayerCollisionChecker(Vector2.down, _castDistance) > 0)
+        if (CheckPlayerCollision(Vector2.down, _castDistance) > 0)
             IsOnGround = true;
         else
             IsOnGround = false;
     }
 
-    private void PushableBlockDetector()
+    private void DetectedPushableBlock()
     {
-        PlayerCollisionChecker(_moveDirection, _castDistance);
+        CheckPlayerCollision(_moveDirection, _castDistance);
 
         foreach (var result in _results)
         {
@@ -115,11 +115,11 @@ public class PlayerMover : MonoBehaviour
                 return;
 
             if(result.collider.TryGetComponent<PushableBlock>(out PushableBlock block))
-                PushingBlock?.Invoke();
+                BlockPushing?.Invoke();
         }
     }
 
-    private int PlayerCollisionChecker(Vector2 direction, float distance)
+    private int CheckPlayerCollision(Vector2 direction, float distance)
     {
         _results = new RaycastHit2D[1];
         return _rigidbody.Cast(direction, _results, distance);

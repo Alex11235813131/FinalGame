@@ -7,15 +7,15 @@ public class ActivationTransition : Transition
 
     private void OnEnable()
     {
-        _activator.Reached += OnBossActivate;
+        _activator.Reached += DeactivateWebs;
     }
 
     private void OnDisable()
     {
-        _activator.Reached -= OnBossActivate;
+        _activator.Reached -= DeactivateWebs;
     }
 
-    private void OnBossActivate()
+    private void DeactivateWebs()
     {
         NeedTransit = true;
 

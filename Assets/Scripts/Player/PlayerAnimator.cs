@@ -6,22 +6,22 @@ public class PlayerAnimator : MonoBehaviour
     private Animator _animator;
     private Player _player;
 
-    private const string _vectorX = "VectorX";
-    private const string _onGround = "OnGround";
-    private const string _jump = "Jump";
-    private const string _pushingBlock = "PushingBlock";
-    private const string _applyDamage = "ApplyDamage";
-    private const string _death = "Death";
-    private const string _crouch = "Crouch";
-    private const string _standUp = "StandUp";
-    private const string _staffAttack = "StaffAttack";
-    private const string _pistolIdle = "PistolIdle";
-    private const string _isWeaponPistol = "isPistolCurrentWeapon";
+    private const string VectorX = "VectorX";
+    private const string OnGround = "OnGround";
+    private const string Jump = "Jump";
+    private const string PushingBlock = "PushingBlock";
+    private const string ApplyDamage = "ApplyDamage";
+    private const string Death = "Death";
+    private const string Crouch = "Crouch";
+    private const string StandUp = "StandUp";
+    private const string StaffAttack = "StaffAttack";
+    private const string PistolIdle = "PistolIdle";
+    private const string IsWeaponPistol = "isPistolCurrentWeapon";
 
     private void Update()
     {
         Walk();
-        _animator.SetBool(_onGround, _player.Mover.IsOnGround);
+        _animator.SetBool(OnGround, _player.Mover.IsOnGround);
     }
 
     private void OnEnable()
@@ -29,84 +29,84 @@ public class PlayerAnimator : MonoBehaviour
         _player = GetComponent<Player>();
         _animator = GetComponent<Animator>();
 
-        _player.Mover.PlayerJumped += OnJump;
-        _player.Mover.PushingBlock += OnPushingBlock;
-        _player.Mover.PlayerCrouched += OnPlayerCrouched;
-        _player.Mover.PlayerStandUp += OnPlayerStandUp;
-        _player.TakeDamage += OnApplyDamage;
+        _player.Mover.Jumped += OnJump;
+        _player.Mover.BlockPushing += OnPushingBlock;
+        _player.Mover.Crouched += OnCrouched;
+        _player.Mover.GotUp += OnStandUp;
+        _player.TakedDamage += OnTakeDamage;
         _player.Dying += OnDying;
-        _player.Attack += OnAttack;
-        _player.ChangeWeapon += OnCurrentWeaponChecker;
+        _player.AppliedDamage += OnApplyDamage;
+        _player.ChangedWeapon += OnCheckCurrentWeapon;
     }
 
     private void OnDisable()
     {
-        _player.Mover.PlayerJumped -= OnJump;
-        _player.Mover.PushingBlock -= OnPushingBlock;
-        _player.Mover.PlayerCrouched -= OnPlayerCrouched;
-        _player.Mover.PlayerStandUp -= OnPlayerStandUp;
-        _player.TakeDamage -= OnApplyDamage;
+        _player.Mover.Jumped -= OnJump;
+        _player.Mover.BlockPushing -= OnPushingBlock;
+        _player.Mover.Crouched -= OnCrouched;
+        _player.Mover.GotUp -= OnStandUp;
+        _player.TakedDamage -= OnTakeDamage;
         _player.Dying -= OnDying;
-        _player.Attack -= OnAttack;
-        _player.ChangeWeapon -= OnCurrentWeaponChecker;
+        _player.AppliedDamage -= OnApplyDamage;
+        _player.ChangedWeapon -= OnCheckCurrentWeapon;
     }
 
     private void Walk()
     {
-        _animator.SetFloat(_vectorX, Mathf.Abs(_player.Mover.MoveDirection.x));
+        _animator.SetFloat(VectorX, Mathf.Abs(_player.Mover.MoveDirection.x));
     }
 
     private void OnJump()
     {
-        _animator.SetTrigger(_jump);
+        _animator.SetTrigger(Jump);
     }
 
-    private void OnApplyDamage()
+    private void OnTakeDamage()
     {
-        _animator.SetTrigger(_applyDamage);
+        _animator.SetTrigger(ApplyDamage);
     }
 
     private void OnDying()
     {
-        _animator.Play(_death);
+        _animator.Play(Death);
     }
 
     private void OnPushingBlock()
     {
-        _animator.Play(_pushingBlock);
+        _animator.Play(PushingBlock);
     }
 
-    private void OnAttack(Weapon weapon)
+    private void OnApplyDamage(Weapon weapon)
     {
         if (weapon.TryGetComponent<Staff>(out Staff staff))
-            _animator.Play(_staffAttack);
+            _animator.Play(StaffAttack);
 
-        OnCurrentWeaponChecker(weapon);
+        OnCheckCurrentWeapon(weapon);
     }
 
-    private void OnPlayerCrouched()
+    private void OnCrouched()
     {
-        _animator.SetTrigger(_crouch);
+        _animator.SetTrigger(Crouch);
     }
 
-    private void OnPlayerStandUp()
+    private void OnStandUp()
     {
-        _animator.SetTrigger(_standUp);
+        _animator.SetTrigger(StandUp);
     }
 
-    private void OnCurrentWeaponChecker(Weapon weapon)
+    private void OnCheckCurrentWeapon(Weapon weapon)
     {
         if (weapon == null)
             return;
 
         if (weapon.TryGetComponent<Pistol>(out Pistol pistol))
         {
-            _animator.SetTrigger(_pistolIdle);
-            _animator.SetBool(_isWeaponPistol, true);
+            _animator.SetTrigger(PistolIdle);
+            _animator.SetBool(IsWeaponPistol, true);
         }
         else
         {
-            _animator.SetBool(_isWeaponPistol, false);
+            _animator.SetBool(IsWeaponPistol, false);
         }
     }
 }

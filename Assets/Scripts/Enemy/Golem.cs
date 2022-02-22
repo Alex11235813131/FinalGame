@@ -7,14 +7,13 @@ public class Golem : Enemy
     [SerializeField] Player _player;
     [SerializeField] AudioClip _takeDamage;
     [SerializeField] AudioClip _dying;
-    [SerializeField] GameObject _protectedShield;
+    [SerializeField] GameObject _protectiveShield;
 
     private float _healDelay = 3f;
     private float _delayTimer;
     private float _destoyingDelay = 8.5f;
     private float _healUpCoefficient = 0.1f;
-    private bool _isDeactivate = false;
-    private const string _death = "Death";
+    private const string Death = "Death";
 
     public event UnityAction Dying;
 
@@ -25,21 +24,36 @@ public class Golem : Enemy
 
     private void FixedUpdate()
     {
-        if (_protectedShield.activeSelf == true)
-            HealthUp();
+        if (_protectiveShield.activeSelf == true)
+            IncreaseHealth();
     }
 
     public override void TakeDamage(int damage)
     {
-        if (_isDeactivate == true || _protectedShield.activeSelf == true)
+        if (_protectiveShield.activeSelf == true)
             return;
 
-        DyingChecker();
-        _audioSource.PlayOneShot(_takeDamage);
-        CurrentHealthPoint -= damage;
+        if (CurrentHealthPoint > 0)
+        {
+            _audioSource.PlayOneShot(_takeDamage);
+            CurrentHealthPoint -= damage;
+        }
+        else if (CurrentHealth <= 0 && IsEnemyDie == false)
+        {
+            Die();
+        }
     }
 
-    private void HealthUp()
+    private void Die()
+    {
+        Dying?.Invoke();
+        _animator.SetTrigger(Death);
+        _audioSource.PlayOneShot(_dying);
+        Destroy(gameObject, _destoyingDelay);
+        IsEnemyDie = true;
+    }
+
+    private void IncreaseHealth()
     {
         if(_delayTimer >= _healDelay)
         {
@@ -48,17 +62,5 @@ public class Golem : Enemy
         }
 
         _delayTimer += Time.deltaTime;
-    }
-
-    private void DyingChecker()
-    {
-        if (CurrentHealthPoint <= 0)
-        {
-            Dying?.Invoke();
-            _animator.SetTrigger(_death);
-            _audioSource.PlayOneShot(_dying);
-            Destroy(gameObject, _destoyingDelay);
-            _isDeactivate = true;
-        }
     }
 }

@@ -10,6 +10,7 @@ public abstract class Enemy : MonoBehaviour
     protected Animator _animator;
     protected AudioSource _audioSource;
 
+    public bool IsEnemyDie { get; protected set; } = false;
     public float MaxHealth => HealthPoint;
     public float CurrentHealth => CurrentHealthPoint;
     public Player Target => _target;

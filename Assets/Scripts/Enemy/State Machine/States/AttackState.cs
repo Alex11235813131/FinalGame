@@ -8,20 +8,20 @@ public class AttackState : State
     [SerializeField] AudioClip[] _hits;
 
     private float _lastAttackTime;
-    private const string _attack = "Attack";
+    private const string Attack = "Attack";
     private float _animationDelay = 0.5f;
 
     private void OnEnable()
     {
         _rigidbody.velocity = Vector2.zero;
-        _animator.Play(_attack);
+        _animator.Play(Attack);
     }
 
     private void Update()
     {
         if(_lastAttackTime <= 0)
         {
-            Attack(Target);
+            ApplyDamage(Target);
             _audioSource.PlayOneShot(_hits[Random.Range(0, _hits.Length)]);
             _lastAttackTime = _delay;
         }
@@ -29,14 +29,14 @@ public class AttackState : State
         _lastAttackTime -= Time.deltaTime;
     }
 
-    private void Attack(Player target)
+    private void ApplyDamage(Player target)
     {
-        StartCoroutine(DelayBeforeAttack(target));
+        StartCoroutine(WaitingAnimation(target));
     }
 
-    private IEnumerator DelayBeforeAttack(Player target)
+    private IEnumerator WaitingAnimation(Player target)
     {
         yield return new WaitForSeconds(_animationDelay);
-        target.ApplyDamage(_damage);
+        target.TakeDamage(_damage);
     }
 }

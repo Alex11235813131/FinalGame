@@ -12,43 +12,43 @@ public class ScreenManager : MonoBehaviour
 
     private void OnEnable()
     {
-        _player.Dying += OnPlayerDying;
+        _player.Dying += OnDie;
 
-        _finishGamePoint.Reached += OnFinishGamePointReached;
+        _finishGamePoint.Reached += OnReachedFinishPoint;
 
-        _startScreen.PlayButtonClick += OnPlayButtonClick;
-        _startScreen.SettingButtonClick += OnSettingButtonClick;
-        _startScreen.ExitButtonClick += OnExitButtonClick;
+        _startScreen.PlayButtonClicked += OnClickPlayButton;
+        _startScreen.SettingButtonClicked += OnClickSettingButton;
+        _startScreen.ExitButtonClicked += OnClickExitButton;
 
-        _settingScreen.CloseScreenButtonDown += OnCloseScreenButtonDown;
-        _settingScreen.RestartButtonClick += OnRestartButtonClick;
-        _settingScreen.ExitButtonClick += OnExitButtonClick;
+        _settingScreen.CloseScreenButtonClicked += OnClickCloseScreenButton;
+        _settingScreen.RestartButtonClicked += OnClickRestartButton;
+        _settingScreen.ExitButtonClicked += OnClickExitButton;
 
-        _gameOverScreen.RestartButtonClick += OnRestartButtonClick;
-        _gameOverScreen.SettingButtonClick += OnSettingButtonClick;
-        _gameOverScreen.ExitButtonClick += OnExitButtonClick;
+        _gameOverScreen.RestartButtonClicked += OnClickRestartButton;
+        _gameOverScreen.SettingButtonClicked += OnClickSettingButton;
+        _gameOverScreen.ExitButtonClicked += OnClickExitButton;
 
-        _controllerScreen.SettingClick += OnSettingButtonClick;
+        _controllerScreen.SettingClicked += OnClickSettingButton;
     }
 
     private void OnDisable()
     {
-        _player.Dying -= OnPlayerDying;
-        _finishGamePoint.Reached -= OnFinishGamePointReached;
+        _player.Dying -= OnDie;
+        _finishGamePoint.Reached -= OnReachedFinishPoint;
 
-        _startScreen.PlayButtonClick -= OnPlayButtonClick;
-        _startScreen.SettingButtonClick -= OnSettingButtonClick;
-        _startScreen.ExitButtonClick -= OnExitButtonClick;
+        _startScreen.PlayButtonClicked -= OnClickPlayButton;
+        _startScreen.SettingButtonClicked -= OnClickSettingButton;
+        _startScreen.ExitButtonClicked -= OnClickExitButton;
 
-        _settingScreen.CloseScreenButtonDown -= OnCloseScreenButtonDown;
-        _settingScreen.RestartButtonClick -= OnRestartButtonClick;
-        _settingScreen.ExitButtonClick -= OnExitButtonClick;
+        _settingScreen.CloseScreenButtonClicked -= OnClickCloseScreenButton;
+        _settingScreen.RestartButtonClicked -= OnClickRestartButton;
+        _settingScreen.ExitButtonClicked -= OnClickExitButton;
 
-        _gameOverScreen.RestartButtonClick -= OnRestartButtonClick;
-        _gameOverScreen.SettingButtonClick -= OnSettingButtonClick;
-        _gameOverScreen.ExitButtonClick -= OnExitButtonClick;
+        _gameOverScreen.RestartButtonClicked -= OnClickRestartButton;
+        _gameOverScreen.SettingButtonClicked -= OnClickSettingButton;
+        _gameOverScreen.ExitButtonClicked -= OnClickExitButton;
 
-        _controllerScreen.SettingClick -= OnSettingButtonClick;
+        _controllerScreen.SettingClicked -= OnClickSettingButton;
     }
 
     private void Start()
@@ -56,7 +56,7 @@ public class ScreenManager : MonoBehaviour
         _startScreen.Open();
     }
 
-    private void OnPlayButtonClick()
+    private void OnClickPlayButton()
     {
         _player.gameObject.SetActive(true);
         _startScreen.Close();
@@ -64,30 +64,30 @@ public class ScreenManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    private void OnRestartButtonClick()
+    private void OnClickRestartButton()
     {
         SceneManager.LoadScene(0);
     }
 
-    private void OnSettingButtonClick()
+    private void OnClickSettingButton()
     {
         Time.timeScale = 0;
         _controllerScreen.Close();
         _settingScreen.Open();
     }
 
-    private void OnExitButtonClick()
+    private void OnClickExitButton()
     {
         Application.Quit();
     }
 
-    private void OnPlayerDying()
+    private void OnDie()
     {
         _controllerScreen.Close();
         _gameOverScreen.Open();
     }
 
-    private void OnCloseScreenButtonDown()
+    private void OnClickCloseScreenButton()
     {
         _settingScreen.Close();
 
@@ -103,7 +103,7 @@ public class ScreenManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    private void OnFinishGamePointReached()
+    private void OnReachedFinishPoint()
     {
         SceneManager.LoadScene(0);
     }

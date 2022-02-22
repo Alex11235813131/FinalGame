@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class GameOverScreen : Screen
 {
-    public event UnityAction RestartButtonClick, SettingButtonClick, ExitButtonClick;
+    public event UnityAction RestartButtonClicked, SettingButtonClicked, ExitButtonClicked;
 
     public override void Close()
     {
@@ -21,17 +21,18 @@ public class GameOverScreen : Screen
         Exit.interactable = true;
     }
 
-    protected override void OnPlayButtonClick()
+    protected override void OnClickPlayButton()
     {
-        RestartButtonClick?.Invoke();
-    }
-    protected override void OnSettingButtonClick()
-    {
-        SettingButtonClick?.Invoke();
+        RestartButtonClicked?.Invoke();
     }
 
-    protected override void OnExitButtonClick()
+    protected override void OnClickSettingButton()
     {
-        ExitButtonClick?.Invoke();
+        SettingButtonClicked?.Invoke();
+    }
+
+    protected override void OnClickExitButton()
+    {
+        ExitButtonClicked?.Invoke();
     }
 }
