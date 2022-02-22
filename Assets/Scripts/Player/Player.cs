@@ -15,13 +15,12 @@ public class Player : MonoBehaviour
     private bool _isWeaponActive = false;
     private int _weaponIndex = 0;
 
+    public PlayerMover Mover => _playerMover;
     public Weapon CurrentWeapon => _currentWeapon;
 
     public event UnityAction TakeDamage, Dying;
     public event UnityAction<int> HealthChanged;
     public event UnityAction<Weapon> Attack, ChangeWeapon;
-
-    public PlayerMover Mover => _playerMover;
 
     private void OnEnable()
     {
