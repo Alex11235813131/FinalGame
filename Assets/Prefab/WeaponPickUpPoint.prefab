@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 774857090250044027}
   - component: {fileID: 774857090250044037}
   - component: {fileID: 774857090250044036}
-  - component: {fileID: 774857090250044038}
+  - component: {fileID: 3626797169842565069}
   m_Layer: 0
   m_Name: WeaponPickUpPoint
   m_TagString: Untagged
@@ -208,7 +208,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &774857090250044038
+--- !u!114 &3626797169842565069
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 774857090250044026}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05733a82671ca264684e1328c5dc0d84, type: 3}
+  m_Script: {fileID: 11500000, guid: d062b3b92aaceac4f83f661c009b2ac6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _audioSource: {fileID: 774857090250044036}

@@ -50,9 +50,7 @@ public abstract class State : MonoBehaviour
         foreach (var transit in _transitions)
         {
             if(transit.NeedTransit)
-            {
                 return transit.TargetState;
-            }
         }
 
         return null;

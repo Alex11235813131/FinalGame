@@ -2,22 +2,22 @@ using UnityEngine;
 
 public class ShootPoint : MonoBehaviour
 {
-    private PlayerMover _playerMover;
+    private Player _player;
     private float _deltaX = 0.5f;
     private float _deltaY = 0.9f;
     private bool _isNewPosition = false;
 
     private void OnEnable()
     {
-        _playerMover = GetComponentInParent<PlayerMover>();
-        _playerMover.PlayerCrouched += OnSetNewPosition;
-        _playerMover.PlayerJumped += OnSetDefaultPosition;
+        _player = GetComponentInParent<Player>();
+        _player.Mover.PlayerCrouched += OnSetNewPosition;
+        _player.Mover.PlayerJumped += OnSetDefaultPosition;
     }
 
     private void OnDisable()
     {
-        _playerMover.PlayerCrouched -= OnSetNewPosition;
-        _playerMover.PlayerJumped -= OnSetDefaultPosition;
+        _player.Mover.PlayerCrouched -= OnSetNewPosition;
+        _player.Mover.PlayerJumped -= OnSetDefaultPosition;
     }
 
     private void OnSetNewPosition()
@@ -37,7 +37,7 @@ public class ShootPoint : MonoBehaviour
 
     private void Update()
     {
-        if (_playerMover.IsPlayerCrouched == false && _isNewPosition == true)
+        if (_player.Mover.IsPlayerCrouched == false && _isNewPosition == true)
         {
             OnSetDefaultPosition();
         }

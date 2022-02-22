@@ -14,9 +14,7 @@ public class PatrolState : State
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        var result = collision.gameObject.TryGetComponent<PatrolPoint>(out PatrolPoint point);
-
-        if (result)
+        if (collision.gameObject.TryGetComponent<PatrolPoint>(out PatrolPoint point))
             StartCoroutine(ChangeMoveDirection());
     }
 

@@ -12,7 +12,7 @@ public class GolemBullet : MonoBehaviour
 
     private void OnEnable()
     {
-       _coroutine = StartCoroutine(DeactivatedDelay());
+        _coroutine = StartCoroutine(DeactivatedDelay());
         _moveDirection = new Vector2(-transform.localScale.x, 0);
     }
     private void OnDisable()

@@ -1,18 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-[RequireComponent(typeof(PlayerMover))]
 public class Player : MonoBehaviour
 {
+    [SerializeField] private PlayerMover _playerMover;
     [SerializeField] private Transform _shootPoint;
     [SerializeField] private WeaponPickUpPoint _weaponPickUpPoint;
     [SerializeField] private Weapon[] _weapons = new Weapon[2];
     [SerializeField] private ObjectPool _bulletsPool;
     [SerializeField] private ControllerHud _controllerScreen;
 
-    private PlayerMover _playerMover;
     private int _currentHealth = 5;
     private Weapon _currentWeapon;
     private bool _isWeaponActive = false;
@@ -23,6 +20,8 @@ public class Player : MonoBehaviour
     public event UnityAction TakeDamage, Dying;
     public event UnityAction<int> HealthChanged;
     public event UnityAction<Weapon> Attack, ChangeWeapon;
+
+    public PlayerMover Mover => _playerMover;
 
     private void OnEnable()
     {
@@ -39,8 +38,7 @@ public class Player : MonoBehaviour
     }
 
     private void Start()
-    {
-        _playerMover = GetComponent<PlayerMover>();
+    {      
         HealthChanged?.Invoke(_currentHealth);
 
         for (int i = 0; i < _weapons.Length; i++)
@@ -76,7 +74,7 @@ public class Player : MonoBehaviour
 
     private void OnTryAttack()
     {
-        if (_isWeaponActive == false || _playerMover.IsOnGround == false)
+        if (_isWeaponActive == false || Mover.IsOnGround == false)
             return;
 
         _currentWeapon.Shoot(_shootPoint, transform.localScale.x);

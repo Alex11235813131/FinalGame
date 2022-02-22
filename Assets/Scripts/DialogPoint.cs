@@ -9,9 +9,7 @@ public class DialogPoint : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.gameObject.TryGetComponent<Player>(out Player player);
-
-        if (player)
+        if (collision.gameObject.TryGetComponent<Player>(out Player player))
         {
             _dialogWindow.Open(_dialogPointNumber);
             gameObject.SetActive(false);

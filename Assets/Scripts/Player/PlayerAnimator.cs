@@ -1,11 +1,10 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Player), typeof(Animator), typeof(PlayerMover))]
+[RequireComponent(typeof(Player), typeof(Animator))]
 public class PlayerAnimator : MonoBehaviour
 {
-    [SerializeField] private Animator _animator;
-    [SerializeField] private PlayerMover _mover;
-    [SerializeField] private Player _player;
+    private Animator _animator;
+    private Player _player;
 
     private const string _vectorX = "VectorX";
     private const string _onGround = "OnGround";
@@ -19,25 +18,21 @@ public class PlayerAnimator : MonoBehaviour
     private const string _pistolIdle = "PistolIdle";
     private const string _isWeaponPistol = "isPistolCurrentWeapon";
 
-    private void Start()
-    {
-        _mover = GetComponent<PlayerMover>();
-        _player = GetComponent<Player>();
-        _animator = GetComponent<Animator>();
-    }
-
     private void Update()
     {
         Walk();
-        _animator.SetBool(_onGround, _mover.IsOnGround);
+        _animator.SetBool(_onGround, _player.Mover.IsOnGround);
     }
 
     private void OnEnable()
     {
-        _mover.PlayerJumped += OnJump;
-        _mover.PushingBlock += OnPushingBlock;
-        _mover.PlayerCrouched += OnPlayerCrouched;
-        _mover.PlayerStandUp += OnPlayerStandUp;
+        _player = GetComponent<Player>();
+        _animator = GetComponent<Animator>();
+
+        _player.Mover.PlayerJumped += OnJump;
+        _player.Mover.PushingBlock += OnPushingBlock;
+        _player.Mover.PlayerCrouched += OnPlayerCrouched;
+        _player.Mover.PlayerStandUp += OnPlayerStandUp;
         _player.TakeDamage += OnApplyDamage;
         _player.Dying += OnDying;
         _player.Attack += OnAttack;
@@ -46,10 +41,10 @@ public class PlayerAnimator : MonoBehaviour
 
     private void OnDisable()
     {
-        _mover.PlayerJumped -= OnJump;
-        _mover.PushingBlock -= OnPushingBlock;
-        _mover.PlayerCrouched -= OnPlayerCrouched;
-        _mover.PlayerStandUp -= OnPlayerStandUp;
+        _player.Mover.PlayerJumped -= OnJump;
+        _player.Mover.PushingBlock -= OnPushingBlock;
+        _player.Mover.PlayerCrouched -= OnPlayerCrouched;
+        _player.Mover.PlayerStandUp -= OnPlayerStandUp;
         _player.TakeDamage -= OnApplyDamage;
         _player.Dying -= OnDying;
         _player.Attack -= OnAttack;
@@ -58,7 +53,7 @@ public class PlayerAnimator : MonoBehaviour
 
     private void Walk()
     {
-        _animator.SetFloat(_vectorX, Mathf.Abs(_mover.MoveDirection.x));
+        _animator.SetFloat(_vectorX, Mathf.Abs(_player.Mover.MoveDirection.x));
     }
 
     private void OnJump()

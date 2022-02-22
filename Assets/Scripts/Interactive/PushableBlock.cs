@@ -17,9 +17,7 @@ public class PushableBlock : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        collision.collider.TryGetComponent<Player>(out Player player);
-
-        if (player != null)
+        if (collision.collider.TryGetComponent<Player>(out Player player))
             _moveDirection = player.GetComponent<PlayerMover>().MoveDirection.normalized;
     }
 

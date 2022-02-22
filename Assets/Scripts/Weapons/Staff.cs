@@ -17,6 +17,5 @@ public class Staff : Weapon
 
     public override void SetBulletPool(ObjectPool pool)
     {
-        
     }
 }

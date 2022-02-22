@@ -86,6 +86,7 @@
     <Compile Include="Assets\Scripts\Enemy\State Machine\Transitions\ActivationTransition.cs" />
     <Compile Include="Assets\Scripts\Enemy\State Machine\States\WaitingState.cs" />
     <Compile Include="Assets\Scripts\Weapons\Weapon.cs" />
+    <Compile Include="Assets\Scripts\Weapons\Bullet.cs" />
     <Compile Include="Assets\Scripts\Player\DialogWindow.cs" />
     <Compile Include="Assets\Scripts\UI\ScreenManager.cs" />
     <Compile Include="Assets\Scripts\Enemy\State Machine\Transitions\ShieldDownTransition.cs" />
@@ -103,14 +104,13 @@
     <Compile Include="Assets\Scripts\Enemy\State Machine\Transitions\DistanceTransition.cs" />
     <Compile Include="Assets\Scripts\PlayerTrecker.cs" />
     <Compile Include="Assets\Scripts\Enemy\DefaultAttack.cs" />
+    <Compile Include="Assets\Scripts\Interactive\WeaponPickUpPoint.cs" />
     <Compile Include="Assets\Scripts\Enemy\State Machine\States\AttackState.cs" />
     <Compile Include="Assets\Scripts\Weapons\HitPoint.cs" />
-    <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\UI\Screen.cs" />
     <Compile Include="Assets\Scripts\Enemy\State Machine\States\FightState.cs" />
     <Compile Include="Assets\Scripts\Player\ShootPoint.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
-    <Compile Include="Assets\Scripts\WeaponPickUpPoint.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMover.cs" />
   </ItemGroup>
   <ItemGroup>

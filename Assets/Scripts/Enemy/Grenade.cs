@@ -18,7 +18,7 @@ public class Grenade : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.TryGetComponent(out Player player))
+        if (collision.collider.TryGetComponent<Player>(out Player player))
         {
             player.ApplyDamage(_damage);
             gameObject.SetActive(false);

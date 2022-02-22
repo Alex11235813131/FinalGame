@@ -7,7 +7,6 @@ public class PlayerSoundManager : MonoBehaviour
     [SerializeField] private AudioClip _jump;
     [SerializeField] private AudioClip[] _takeDamage;
     [SerializeField] private Player _player;
-    [SerializeField] private PlayerMover _playerMover;
 
     private void FixedUpdate()
     {
@@ -16,13 +15,13 @@ public class PlayerSoundManager : MonoBehaviour
 
     private void OnEnable()
     {
-        _playerMover.PlayerJumped += OnPlayerJumped;
+        _player.Mover.PlayerJumped += OnPlayerJumped;
         _player.TakeDamage += OnPlayerTakeDamage;
     }
 
     private void OnDisable()
     {
-        _playerMover.PlayerJumped -= OnPlayerJumped;
+        _player.Mover.PlayerJumped -= OnPlayerJumped;
         _player.TakeDamage -= OnPlayerTakeDamage;
     }
 
@@ -42,7 +41,7 @@ public class PlayerSoundManager : MonoBehaviour
         if (_audioSource.isPlaying)
             return;
 
-        if (_playerMover.MoveDirection.x != 0 && _playerMover.IsOnGround)
+        if (_player.Mover.MoveDirection.x != 0 && _player.Mover.IsOnGround)
         {
             _audioSource.clip = _steps[Random.Range(0, _steps.Length - 1)];
             _audioSource.Play();

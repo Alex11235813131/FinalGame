@@ -6,10 +6,7 @@ public class SpikeCrystal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.gameObject.TryGetComponent<Player>(out Player player);
-
-        if (player)
+        if (collision.gameObject.TryGetComponent<Player>(out Player player))
             player.ApplyDamage(_damage);
-
     }
 }
