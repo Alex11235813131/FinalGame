@@ -8,8 +8,8 @@ public class AttackState : State
     [SerializeField] AudioClip[] _hits;
 
     private float _lastAttackTime;
-    private const string Attack = "Attack";
     private float _animationDelay = 0.5f;
+    private const string Attack = "Attack";
 
     private void OnEnable()
     {

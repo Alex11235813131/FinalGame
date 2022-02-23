@@ -28,7 +28,6 @@ public class PlayerAnimator : MonoBehaviour
     {
         _player = GetComponent<Player>();
         _animator = GetComponent<Animator>();
-
         _player.Mover.Jumped += OnJump;
         _player.Mover.BlockPushing += OnPushingBlock;
         _player.Mover.Crouched += OnCrouched;

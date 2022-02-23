@@ -10,6 +10,8 @@ public class DialogWindow : MonoBehaviour
     [SerializeField] CanvasGroup _canvasGroup;
     [SerializeField] ControllerHud _controllerHud;
 
+    private List<string> _dialogs = new List<string>(5);
+
     private const string Speak = "Speak";
     private const string StartDialog = "Жесткая посадка, но источник сигнала SOS впереди, нужно следовать к нему.";
     private const string LokingEnemyDialog = "Воу, это видимо представители местной фауны, пока никакого оружия нет, " +
@@ -20,8 +22,6 @@ public class DialogWindow : MonoBehaviour
         "правда никого из них не видно, нужно подойти по ближе.";
     private const string EnemyDefeatedDialog = "Никогда не видела ничего подобного, планета без разумной жизни, откуда столь сложный механизм," +
         "есть о чем задуматьмя, а что это там светится в далеке...";
-
-    private List<string> _dialogs = new List<string>(5);
 
     private void Start()
     {

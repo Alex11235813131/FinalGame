@@ -13,9 +13,9 @@ public class ProtectedShield : MonoBehaviour
 
     private Golem _enemyGolem;
     private float _deactivationDelay = 1;
+    private bool _isDeactivated;
     private const string Deactivate = "Deactivate";
     private const string Activate = "Activate";
-    private bool _isDeactivated;
 
     public Enemy EnemyGolem => _enemyGolem;
 

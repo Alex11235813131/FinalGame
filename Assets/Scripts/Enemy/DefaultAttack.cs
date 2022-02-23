@@ -7,9 +7,9 @@ public class DefaultAttack : Attack
     [SerializeField] private Transform _shootPoint;
     [SerializeField] private AudioClip _shootSound;
 
-    private const string _defaultAttack = "DefaultAttack";
     private float _delay = 1.5f;
     private float _timer;
+    private const string _defaultAttack = "DefaultAttack";
 
     public override void Shoot()
     {

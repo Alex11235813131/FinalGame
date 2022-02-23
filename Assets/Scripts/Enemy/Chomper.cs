@@ -6,8 +6,8 @@ public class Chomper : Enemy
     [SerializeField] private AudioClip _takeDamage;
     [SerializeField] private AudioClip _dying;
 
-    private const string Death = "Death";
     private float _destroingDelay = 1f;
+    private const string Death = "Death";
 
     public event UnityAction<Chomper> Dying;
 

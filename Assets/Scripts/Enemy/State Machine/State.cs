@@ -1,6 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource), typeof(Rigidbody2D), typeof(Animator))]
+[RequireComponent(typeof(Enemy))]
 public abstract class State : MonoBehaviour
 {
     [SerializeField] private Transition[] _transitions;

@@ -10,10 +10,10 @@ public class Player : MonoBehaviour
     [SerializeField] private ObjectPool _bulletsPool;
     [SerializeField] private ControllerHud _controllerScreen;
 
-    private int _currentHealth = 5;
     private Weapon _currentWeapon;
-    private bool _isWeaponActive = false;
     private int _weaponIndex = 0;
+    private int _currentHealth = 5;
+    private bool _isWeaponActive = false;
 
     public PlayerMover Mover => _playerMover;
     public Weapon CurrentWeapon => _currentWeapon;
